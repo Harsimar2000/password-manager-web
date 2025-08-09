@@ -49,7 +49,7 @@ const Register = () => {
       return;
     }
 
-    const registerRes = await fetch("http://localhost:8080/v1/auth/register", {
+    const registerRes = await fetch(`/api/register`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
